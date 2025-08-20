@@ -11,4 +11,5 @@ type InstanceItem struct {
 	Name     string
 	HostName string
 	State    string
+	Build    string
 }

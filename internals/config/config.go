@@ -6,8 +6,9 @@ import (
 )
 
 type Config struct {
-	URLPattern string   `json:"urlPattern"`
-	EnvNames   []string `json:"envNames"`
+	URLPattern      string   `json:"urlPattern"`
+	EnvNames        []string `json:"envNames"`
+	RefreshInterval int      `json:"refresh_interval"`
 }
 
 func (c *Config) ReloadFromFile(path string) error {
